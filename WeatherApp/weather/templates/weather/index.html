@@ -24,6 +24,9 @@
     </li>
   </ul>
 </header>
+
+
+{% for info in all_info %}
 <div class="col-10 alert alert-success p-4 m-5 row">
     <div class="row">
         <div class="col-8">
@@ -34,6 +37,12 @@
             <img src="http://openweathermap.org/img/w/{{ info.icon }}.png" >
         </div>
     </div>
+</div>
+{% endfor%}
+
+
+
+
 </div>
 </body>
 </html>
